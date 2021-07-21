@@ -1,0 +1,128 @@
+{
+    // ##########################################################################
+    // Haskell Config
+    // ##########################################################################
+    "[haskell]": {
+        "editor.defaultFormatter": "sjurmillidahl.ormolu-vscode",
+        "editor.tabSize": 2,
+    },
+    // ##########################################################################
+    // Elm Config
+    // ##########################################################################
+    "elm.analyseEnabled": true,
+    "elm.compiler": "./node_modules/.bin/elm",
+    "elm.makeCommand": "./node_modules/.bin/elm-make",
+    "[elm]": {
+        "editor.defaultFormatter": "elmTooling.elm-ls-vscode"
+    },
+    // ##########################################################################
+    // Git, Gitlens
+    // ##########################################################################
+    "git.autofetch": true,
+    "gitlens.views.repositories.location": "scm",
+    "gitlens.views.fileHistory.location": "scm",
+    "gitlens.views.lineHistory.location": "scm",
+    "gitlens.views.compare.location": "scm",
+    "gitlens.views.search.location": "scm",
+    "gitlens.currentLine.format": "${author}, ${agoOrDate} ",
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "diffEditor.renderSideBySide": false,
+    // ##########################################################################
+    // Fix bad defaults
+    // ##########################################################################
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.editor.enablePreview": false,
+    "liveshare.connectionMode": "direct",
+    "workbench.sideBar.location": "left",
+    "explorer.confirmDelete": false,
+    "files.trimFinalNewlines": true,
+    "files.insertFinalNewline": true,
+    "editor.mouseWheelZoom": true,
+    "window.title": "${activeEditorMedium}${separator}${rootName}",
+    "editor.formatOnSave": false,
+    "window.titleBarStyle": "custom",
+    "editor.stablePeek": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    // ##########################################################################
+    // Meta
+    // ##########################################################################
+    "sync.gist": "944a4e65c23cbd81b42ea8163e2df02a", //settings sync
+    "macros": {
+        "moveToNewWindow": [
+            "workbench.action.files.save",
+            "workbench.action.files.showOpenedFileInNewWindow",
+            "workbench.action.closeActiveEditor"
+        ]
+    },
+    "sync.forceUpload": false,
+    // ##########################################################################
+    // Styling
+    // ##########################################################################
+    "workbench.colorTheme": "Bearded Theme Arc",
+    "editor.cursorBlinking": "smooth",
+    "indentRainbow.ignoreErrorLanguages": [
+        "markdown",
+        "elm",
+        "haskell",
+        "cabal"
+    ],
+    "indentRainbow.colors": [
+        "rgba(255,255,64,0.05)",
+        "rgba(127,255,127,0.05)",
+        "rgba(255,127,255,0.05)",
+        "rgba(79,236,236,0.05)"
+    ],
+    "vsicons.dontShowNewVersionMessage": true,
+    // ##########################################################################
+    // Etc
+    // ##########################################################################
+    "explorer.confirmDragAndDrop": false,
+    "polacode.target": "snippet",
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "editor.fontFamily": "'Fira Code','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontLigatures": true,
+    "workbench.iconTheme": "vscode-icons",
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "terminal.integrated.inheritEnv": false,
+    "files.exclude": {
+        "**/.git": false
+    },
+    "terminal.integrated.scrollback": 10000,
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "redhat.telemetry.enabled": true,
+    "haskell.trace.server": "messages",
+    "[terraform]": {
+        "editor.formatOnSave": true
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "[purescript]": {
+        "editor.defaultFormatter": "mvakula.vscode-purty"
+    }
+}
