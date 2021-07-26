@@ -5,7 +5,7 @@ export PATH=$HOME/bin:/usr/local:$HOME/.local/bin:$PATH
 export ZSH="/home/mathiasfrithiofsson/.oh-my-zsh"
 ZSH_THEME="spaceship"
 
-plugins=(git autojump docker git zsh-nvm)
+plugins=(git autojump docker git zsh-nvm nix-shell)
 
 source $ZSH/oh-my-zsh.sh
 
